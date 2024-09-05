@@ -7,7 +7,7 @@ interface ArticleDetailData {
   published_at: string;
   image_url: string;
   summary: string;
-  newsSite: string;
+  news_site: string;
   url: string;
 }
 
@@ -40,7 +40,7 @@ const ArticleDetail = () => {
         <h1>{article.title}</h1>
         <p><strong>Published:</strong> {new Date(article.published_at).toLocaleDateString()}</p>
         <p><strong>Summary:</strong> {article.summary}</p>
-        <p><strong>News Site:</strong> {article.newsSite}</p>
+        <p><strong>News Site:</strong> {article.news_site}</p>
         <a href={article.url} target="_blank" rel="noopener noreferrer">Read full article</a>
       </div>
     </div>
